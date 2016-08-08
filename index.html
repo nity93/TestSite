@@ -1,0 +1,67 @@
+Ent<!DOCTYPE HTML>
+
+<head>
+
+ <title>Test Site</title>
+
+</head>
+
+<body> 
+
+	<header>   
+		<h1>SKILLS </h1>
+		<h4>To show the skills of Trinity Lawrence</h4>
+	</header>
+
+	<hr/>
+
+	<div id="content">
+ 
+		<p>
+     			This is a simple calculator that performs addition only.
+		</p>
+
+		<form>
+      			<input id="num1" type="text"/> + <input id="num2" type="text"/> = <input id="result" type="text" /> <br/>
+			<button onClick="javascript:add(); return false;">add</button>
+		</form>
+
+	</div>
+
+	<footer> 
+		&copy 2016
+	</footer>
+
+	<script type="text/javascript">
+		
+		// Adds to numbers and displays sum in the result input box.
+		function add() {
+                   
+                   try {  
+  			
+			// get the first number.
+                   	var num1 = document.getElementById('num1').value;
+			
+			// get the second number.
+			var num2=document.getElementById('num2').value;
+			
+			// perform addition while converting text to number format
+			var sum = Number(num1) + Number(num2);
+			
+			// write result to the result text box.
+			document.getElementById('result').value = sum;
+
+			}
+
+			catch( ex ) {
+  				
+				// log errors.
+				console.log('oops!');
+			}
+
+		}
+
+        </script>
+
+</body>
+</HTML>
